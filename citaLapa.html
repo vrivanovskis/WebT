@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formas</title>
+    <script>
+    function krasot(){
+        var kr=document.getElementById("krasa").value;
+        document.getElementById("fons").style="background-color:"+kr;
+    }
+    </script>
+</head>
+<body>
+<form>
+  <div id="fons" style="background-color:lightgrey">Izvēlies krāsu!</div>
+  <input type="color" id="krasa" value="#00ff00" ondblclick="krasot(); document.getElementById( 'fons').innerHTML = 'Krāsa nomainīta!';"   >
+</form>
+    <p>Kad izvēlaties krāsu, klikšņiniet pogu divas reizes!</p>
+     <a href=" http://localhost:8383/TestWeb/index.html" target="_blank"> <img src="images/Bultas.png" style="width:60px;height:30px;"/></a>
+</body>
+</html>
